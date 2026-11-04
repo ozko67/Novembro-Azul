@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Novembro Azul - Um Toque pela Vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Cabeçalho da Campanha -->
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo">🎗️ Novembro Azul: Um Toque pela Vida</h1>
+            <nav class="nav-menu">
+                <a href="#inicio">Início</a>
+                <a href="#estatisticas">Estatísticas</a>
+                <a href="#exames">Exames</a>
+            </nav>
+        </div>
+        <div class="ticker">
+            <span>💙 Mês Mundial de Combate ao Câncer de Próstata</span>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- 2. Painel de Métricas -->
+        <section id="estatisticas" class="metrics-grid">
+            <div class="metric-card">
+                <h3>12.450</h3>
+                <p>Exames Realizados este mês</p>
+            </div>
+            <div class="metric-card">
+                <h3>98.2%</h3>
+                <p>Chance de cura com diagnóstico precoce</p>
+            </div>
+            <div class="metric-card">
+                <h3>18</h3>
+                <p>Clínicas e Postos Parceiros Ativos</p>
+            </div>
+            <div class="metric-card">
+                <h3>45+</h3>
+                <p>Idade recomendada para início do rastreamento</p>
+            </div>
+        </section>
+
+        <!-- 3. Tabela Extensa de Agendamentos e Exames -->
+        <section id="exames" class="table-section">
+            <h2>Controle de Exames e Atendimentos</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Paciente</th>
+                            <th>Idade</th>
+                            <th>Tipo de Exame</th>
+                            <th>Médico Urologista</th>
+                            <th>Status do Exame</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00</td>
+                            <td>Carlos Silva</td>
+                            <td>52</td>
+                            <td>Consulta Preventiva</td>
+                            <!-- Uso de rowspan: Dr. Marcos André atende os 2 primeiros -->
+                            <td rowspan="2">Dr. Marcos André</td>
+                            <td><span class="badge badge-concluido">Concluído</span></td>
+                        </tr>
+                        <tr>
+                            <td>08:45</td>
+                            <td>Antônio Santos</td>
+                            <td>61</td>
+                            <td>Exame de PSA</td>
+                            <td><span class="badge badge-andamento">Em Andamento</span></td>
+                        </tr>
+                        <tr>
+                            <td>09:30</td>
+                            <td>Roberto Almeida</td>
+                            <td>48</td>
+                            <td>Ultrassonografia de Próstata</td>
+                            <!-- Uso de rowspan: Dr. Fábio Lima atende os 3 seguintes -->
+                            <td rowspan="3">Dr. Fábio Lima</td>
+                            <td><span class="badge badge-agendado">Agendado</span></td>
+                        </tr>
+                        <tr>
+                            <td>10:15</td>
+                            <td>João Pereira</td>
+                            <td>55</td>
+                            <td>Exame de PSA</td>
+                            <td><span class="badge badge-concluido">Concluído</span></td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td>Francisco Oliveira</td>
+                            <td>67</td>
+                            <td>Biópsia</td>
+                            <td><span class="badge badge-andamento">Em Andamento</span></td>
+                        </tr>
+                        <tr>
+                            <td>13:30</td>
+                            <td>Luiz Souza</td>
+                            <td>50</td>
+                            <td>Consulta Preventiva</td>
+                            <td>Dr. Renato Costa</td>
+                            <td><span class="badge badge-agendado">Agendado</span></td>
+                        </tr>
+                        <tr>
+                            <td>14:15</td>
+                            <td>Marcos Costa</td>
+                            <td>46</td>
+                            <td>Exame de PSA</td>
+                            <!-- Uso de rowspan: Dr. André Ribeiro para os 2 últimos -->
+                            <td rowspan="2">Dr. André Ribeiro</td>
+                            <td><span class="badge badge-concluido">Concluído</span></td>
+                        </tr>
+                        <tr>
+                            <td>15:00</td>
+                            <td>José Rodrigues</td>
+                            <td>59</td>
+                            <td>Ultrassonografia de Próstata</td>
+                            <td><span class="badge badge-agendado">Agendado</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <!-- Uso de colspan: Mesclando 4 colunas para o totalizador -->
+                            <td colspan="4" class="text-right"><strong>Total de Atendimentos Agendados para Hoje:</strong></td>
+                            <td colspan="2"><strong>8 Pacientes</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <!-- 4. Seção de Recomendações e Prevenção -->
+        <section class="prevention-section">
+            <h2>Recomendações e Prevenção</h2>
+            <div class="prevention-flex">
+                <div class="prevention-card">
+                    <h4>Estilo de Vida</h4>
+                    <p>Alimentação Saudável e Prática de Atividades Físicas regular ajudam a diminuir drasticamente o risco de várias doenças.</p>
+                </div>
+                <div class="prevention-card">
+                    <h4>Rotina Médica</h4>
+                    <p>A Importância dos Exames Anuais de PSA e Toque retal. Eles são complementares e fundamentais para a saúde masculina.</p>
+                </div>
+                <div class="prevention-card">
+                    <h4>Atenção Familiar</h4>
+                    <p>Histórico Familiar e Fatores de Risco. Quem possui parentes de primeiro grau com a doença deve iniciar o rastreamento mais cedo.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 6. Rodapé -->
+    <footer class="main-footer">
+        <p>🎗️ Campanha Novembro Azul | Cuide de quem você ama, previna-se!</p>
+    </footer>
+
+</body>
+</html>
